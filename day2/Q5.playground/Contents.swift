@@ -27,4 +27,4 @@ func minDivide(minDivisor: Int = 1, maxDivisor: Int = 20) {
     print(sum)
 }
 
-minDivide(minDivisor: 1, maxDivisor: 20)
+minDivide(minDivisor: 1, maxDivisor: 20) // Output: 232792560
