@@ -18,7 +18,7 @@ struct Player {
         let answer: String? = readLine()
         
         if answer == "Y" {
-            range = thrower.range()
+            range = thrower.throwBall()
         }
         if answer == "N" {
             let newBottle: Bottle = Bottle()
@@ -48,7 +48,7 @@ struct BallThrower {
     var teta: Double = Double.random(in: 0...90) // 0 <= teta <= 90 degrees
     var V: Double = Double.random(in: 0...100) // 0 <= V <= 100 m/s
         
-    func range() -> Double {
+    func throwBall() -> Double {
         // range = V * V * sin(2 * teta) / g
         // g = 10
         let R = V * V * sin(2 * teta) / 10
@@ -91,7 +91,7 @@ class BottleShootGame {
     
     func enterPlayCount() {
         print("Please enter play count: ")
-        //var readValue: String? = readLine()
+
         if let readValue = readLine() {
             let playCount: Int = Int(readValue) ?? 0
             if playCount > 0 {
