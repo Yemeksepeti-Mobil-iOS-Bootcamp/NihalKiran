@@ -217,5 +217,3 @@ hasSecondName() // Nihal doesn't have a second name. Name: Nihal, Surname: Kıra
 
 //MARK: static keyword neden kullanırız. Örnek bir kullanım yapınız
 
-
-
