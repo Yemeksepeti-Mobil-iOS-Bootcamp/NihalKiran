@@ -217,3 +217,23 @@ hasSecondName() // Nihal doesn't have a second name. Name: Nihal, Surname: Kıra
 
 //MARK: static keyword neden kullanırız. Örnek bir kullanım yapınız
 
+// Eğer bir değişken class a ait bir özellik ise bu static keywordu ile belirtilir.
+
+class Person {
+    static var personCount: Int = 0
+    
+    static func addPerson() {
+        Person.personCount += 1
+    }
+    
+    static func getPersonCount() -> Int {
+        return personCount
+    }
+}
+
+class Student : Person {
+    var studentCount: Int = 0
+    
+    
+}
+
