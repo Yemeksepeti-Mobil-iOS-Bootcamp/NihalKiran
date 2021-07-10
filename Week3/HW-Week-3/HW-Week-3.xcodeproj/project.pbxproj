@@ -13,7 +13,7 @@
 		A03864DD26992297007C37FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03864DB26992297007C37FE /* Main.storyboard */; };
 		A03864DF26992298007C37FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03864DE26992298007C37FE /* Assets.xcassets */; };
 		A03864E226992298007C37FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03864E026992298007C37FE /* LaunchScreen.storyboard */; };
-		A03864EB269922CE007C37FE /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03864EA269922CE007C37FE /* PageViewController.swift */; };
+		A03864EE2699259D007C37FE /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03864ED2699259D007C37FE /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		A03864DE26992298007C37FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A03864E126992298007C37FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A03864E326992298007C37FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A03864EA269922CE007C37FE /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = "../../../PageControl/HW-Week-3/PageViewController/PageViewController.swift"; sourceTree = "<group>"; };
+		A03864ED2699259D007C37FE /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		A03864D426992297007C37FE /* HW-Week-3 */ = {
 			isa = PBXGroup;
 			children = (
-				A03864E9269922B8007C37FE /* PageControl */,
+				A03864EC26992587007C37FE /* PageControl */,
 				A03864D526992297007C37FE /* AppDelegate.swift */,
 				A03864D726992297007C37FE /* SceneDelegate.swift */,
 				A03864D926992297007C37FE /* ViewController.swift */,
@@ -70,10 +70,10 @@
 			path = "HW-Week-3";
 			sourceTree = "<group>";
 		};
-		A03864E9269922B8007C37FE /* PageControl */ = {
+		A03864EC26992587007C37FE /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
-				A03864EA269922CE007C37FE /* PageViewController.swift */,
+				A03864ED2699259D007C37FE /* PageViewController.swift */,
 			);
 			path = PageControl;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 				A03864DA26992297007C37FE /* ViewController.swift in Sources */,
 				A03864D626992297007C37FE /* AppDelegate.swift in Sources */,
 				A03864D826992297007C37FE /* SceneDelegate.swift in Sources */,
-				A03864EB269922CE007C37FE /* PageViewController.swift in Sources */,
+				A03864EE2699259D007C37FE /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
