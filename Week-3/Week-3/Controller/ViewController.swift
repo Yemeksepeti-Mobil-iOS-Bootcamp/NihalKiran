@@ -35,9 +35,9 @@ extension ViewController: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if isFiltering {
+            filteredUsers.count == 0 ? self.tableView.setEmptyMessage("Ops! Search not found x( ") : self.tableView.restore()
             return filteredUsers.count
         }
-        
         return users.count
     }
     
@@ -82,4 +82,22 @@ extension ViewController: UISearchBarDelegate {
     }
 }
 
-//MARK: Custom Empty View Oluşturunuz... 
+// Empty Extension
+extension UITableView {
+    func setEmptyMessage(_ empty: String) {
+        
+        let emptyLbl = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        emptyLbl.text = empty
+        emptyLbl.numberOfLines = 0
+        emptyLbl.textColor = .red
+        emptyLbl.textAlignment = .center
+        emptyLbl.font = UIFont(name: "Roboto-Ultrabold", size: 40)
+        self.backgroundView = emptyLbl
+        self.separatorStyle = .none
+    }
+    
+    func restore() {
+        self.backgroundColor = nil
+        self.separatorStyle = .singleLine
+    }
+}
